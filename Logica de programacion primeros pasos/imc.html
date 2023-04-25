@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+</head>
+<body>
+    <h1>Programa para calcular el IMC</h1>
+    <script>
+        function saltarlinea() {
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarlinea();
+
+            
+        }
+
+        function CalclularIMC(peso,altura) {
+            imc = peso /(altura*altura);
+            return(imc)
+            
+        }
+
+        PesoPersona = 68
+        AlturaPersona = 1.87
+        // IMCPersona = PesoPersona/(AlturaPersona*AlturaPersona)
+        IMCPersona = CalclularIMC(PesoPersona,AlturaPersona)
+        imprimir("El IMC de la persona es: " + IMCPersona)
+
+
+
+        PesoPersona2 = 80
+        AlturaPersona2 = 1.60
+        IMCPersona2 = PesoPersona2/(AlturaPersona2*AlturaPersona2)
+        imprimir("El IMC de la persona 2 es: " + IMCPersona2)
+    </script>
+
+
+</body>
+</html>
