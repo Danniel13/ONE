@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo puntos de un socccer team</title>
+</head>
+<body>
+    <h1>Calculo puntos de un socccer team</h1>
+
+    <script>
+
+        function SaltoLinea() {
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+                       
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            SaltoLinea();
+            
+        }
+
+        var victorias= prompt("Informe la cantidad de victorias");
+        var empates = prompt("Informe la cantidad de empates");
+
+        TotalPuntos = ((victorias*3)+ parseInt(empates));
+
+        imprimir("El total de puntos que hizo el equipo fue:" + TotalPuntos)
+
+    </script>
+</body>
+</html>
