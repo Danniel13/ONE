@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+</head>
+<body>
+    <h1>Programa para calcular el IMC-INPUT</h1>
+    <script>
+        function saltarlinea() {
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarlinea();
+
+            
+        }
+
+        function CalclularIMC(peso,altura) {
+            return (peso /(altura*altura));
+           
+            
+        }
+        Nombrep = prompt ("¿Cual es su nombre?")
+        PesoPersona = prompt ("Informe su peso")
+        AlturaPersona = prompt("Informe su altura")
+        // IMCPersona = PesoPersona/(AlturaPersona*AlturaPersona)
+        IMCPersona = CalclularIMC(PesoPersona,AlturaPersona)
+        imprimir("El IMC de "+ Nombrep + " es: " + Math.round(IMCPersona))
+        imprimir(PesoPersona)
+        imprimir(AlturaPersona)
+
+        if (IMCPersona < 18.5) {
+            imprimir("Abajo de lo recomendado")
+        }
+        if (IMCPersona>=18.5 && IMCPersona<=24.9){
+            imprimir("Peso normal :vvvvv")
+        }
+        if (IMCPersona>=25.0){
+            imprimir("Sobre peso joven ")
+        }
+
+        if (IMCPersona>=30){
+            imprimir("Sobrepeso")
+        }
+            
+
+
+    </script>

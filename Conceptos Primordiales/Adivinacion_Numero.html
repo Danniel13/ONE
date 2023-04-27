@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de adivinacion</title>
+</head>
+<body>
+    <h1>Adivinacion de numero del 1 al 20</h1>
+
+    <script>
+          function saltarlinea() {
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            saltarlinea();
+
+         }
+
+        var NumeroPensado = Math.round(Math.random()*20);//Random para numero aleatorio  y se multiplica por el numero que quiere como maximo obtener.
+        var NumeroLanzado = parseInt(prompt("Ingrese un numero entre 0 y 20"))
+        //  while (NumeroLanzado != NumeroPensado) {
+        //     var NumeroLanzado = parseInt(prompt("Ingrese un numero entre 0 y 20"))
+        //  }
+        imprimir("Numero pensado por la IA:" + NumeroPensado)
+        imprimir("Numero ingresado:" + NumeroLanzado)
+        if (NumeroLanzado == NumeroPensado){
+            alert("Felicidades le pegaste al numero lokensi@ :vvv");
+            imprimir("Felicidades le pegaste al numero lokensi@ :vvv");
+         }
+         else{
+            alert("Pailangas ese no es :v");
+            imprimir("Pailangas ese no es :v")
+         }
+
+    </script>
+</body>
+</html>
