@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de multiplicar con WHILE</title>
+</head>
+<body>
+    <h1>Tabla de multiplicar con WHILE</h1>
+
+    <script>
+
+function SaltoLinea() {
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+                       
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            SaltoLinea();
+            
+        }
+        var tabla = prompt("Ingrese la tabla que desea traer");
+        var multiplicador=1;
+
+ while (multiplicador <=10) {
+    imprimir((tabla) + " x " + multiplicador + " = " + (tabla* multiplicador));
+    multiplicador++;
+    
+ }
+        
+    </script>
+</body>
+</html>

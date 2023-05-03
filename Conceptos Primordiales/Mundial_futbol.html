@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundiales</title>
+</head>
+<body>
+    <h1>Mundiales</h1>
+
+    <script>
+         function SaltoLinea() {
+            document.write("<br>")
+            document.write("<br>")
+            document.write("<br>")
+                       
+        }
+
+        function imprimir(frase) {
+            document.write(frase);
+            SaltoLinea();
+            
+        }
+        // Manejo While
+        var Anio_Mundial = 1930;
+        while (Anio_Mundial <=2022){
+            imprimir("Hubo mundial de la FIFA en el año: " + Anio_Mundial)
+            Anio_Mundial = Anio_Mundial +4;
+
+            
+        }
+        imprimir("fin :vvvv")
+    </script>
+    
+</body>
+</html>
