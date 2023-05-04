@@ -7,7 +7,7 @@
     <title>Tabla de multiplicar con FOR</title>
 </head>
 <body>
-    <h1>Tabla de multiplicar con FOR</h1>
+    
     <script>
         function SaltoLinea() {
             document.write("<br>")
@@ -23,6 +23,7 @@
         }
         var tabla = prompt("Ingrese la tabla que desea traer");
         var multiplicador=1;
+        document.write("<h1>Tabla de multiplicar del "+ tabla + " con FOR</h1>")
 
 for (var multiplicador=1; multiplicador <=10;multiplicador++) {
     imprimir(((tabla) + " x " + multiplicador + " = " + (tabla* multiplicador)));
